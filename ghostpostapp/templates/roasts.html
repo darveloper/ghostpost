@@ -1,0 +1,13 @@
+<h1>Welcome To Ghost Post</h1>
+<a href="/">Go back home</a>
+
+{% for post in posts %}
+    {% if not post.is_boast %}
+        <h3>Roast</h3>
+    {% endif %}
+    
+    <li>
+        {% include 'blob.html' %}
+    </li>
+    
+{% endfor %}
